@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Vazir.woff2") format("woff2"),
+        url("../fonts/Vazir.woff") format("woff"),
+        url("../fonts/Vazir.ttf") format("truetype");
+    /* Safari, Android, iOS */
+}
+
+.bg-green{
+    background-color: #65f78a !important;
+}
+.text-green{
+    color: #65f78a;
+}
+
+.border-bottom-green{
+    border-bottom: 5px solid #65f78a;
+}
+
+.height-30{
+    height: 60px !important; 
+}
+
+
+body{
+    font-family: "Vazir" !important;
+    /* overflow: hidden; */
+    background-image: url(../asset/bg2.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    animation: bg-anim 10s infinite;
+}
+
+section .container .row .card-hover{
+    
+    transition: all .5s;
+}
+
+section .container .row .card-hover:hover{
+    background-color: #65f78a !important;
+    color: rgb(29, 29, 29) !important;
+
+}
+
+@keyframes bg-anim {
+    0%   {
+        background-position-y: 0px;
+    }
+    50%  {
+        background-position-y: 20px;
+    }
+    100% {
+        background-position-y: 0px; 
+    }
+}

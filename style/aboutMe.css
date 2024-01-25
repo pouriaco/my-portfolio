@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Vazir.woff2") format("woff2"),
+        url("../fonts/Vazir.woff") format("woff"),
+        url("../fonts/Vazir.ttf") format("truetype");
+    /* Safari, Android, iOS */
+}
+
+.bg-green{
+    background-color: #65f78a;
+}
+.text-green{
+    color: #65f78a;
+}
+
+.border-bottom-green{
+    border-bottom: 5px solid #65f78a;
+}
+
+.height-30{
+    height: 60px !important; 
+}
+
+/*progress*/
+.progress-30:hover{
+    width: 30% !important;
+}
+.progress-50:hover{
+    width: 50% !important;
+}
+.progress-80:hover{
+    width: 80% !important;
+}
+.progress-100:hover{
+    width: 100% !important;
+}
+
+body{
+    font-family: "Vazir" !important;
+    /* overflow: hidden; */
+}
+
+#skill-section{
+    background-image: url(../asset/bg2.png);
+    background-size: 100%;
+    width: 100%;
+    background-repeat: repeat-y;
+    height: 88.9vh;
+    animation: bg-anim 10s infinite;
+}
+
+.skills{
+    transition: all .2s;
+}
+
+.skills:hover .card-hover-show{
+    display: block !important;
+}
+.skills:hover .card-hover-none{
+    display: none !important;
+}
+
+.progress{
+    width: 100%;
+    overflow: visible !important;
+    transition: all .2s;
+}
+.progress:hover{
+    /* width: 80%; */
+    overflow: visible !important;
+}
+.progress:hover > .hover-hide{
+    display: none;
+}
+.progress:hover > .hover-show{
+    transition: all .5s;
+    display: block !important;
+}
+
+@keyframes bg-anim {
+    0%   {
+        background-position-y: 0px;
+    }
+    50%  {
+        background-position-y: 20px;
+    }
+    100% {
+        background-position-y: 0px; 
+    }
+}
