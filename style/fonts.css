@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Baloo Bhaijaan 2" !important;
+    font-optical-sizing: auto !important;
+    font-weight: bold !important;
+    font-style: normal !important;
+}
+
