@@ -137,12 +137,12 @@
 }
 
 .top-90 {
-    top: 94vh;
+    bottom: 10px;
 }
 
 .slider {
     position: absolute;
-    top: 9.5vh;
+    top: 86.5px;
     height: 90.5vh;
     left: -250px;
     width: 250px;
