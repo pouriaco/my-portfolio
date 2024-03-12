@@ -18,7 +18,7 @@
 
 <body class="bg-dark">
     <!--Persian=========>version-->
-    <header class="persian-version">
+    <header class="persian-version call-me-nav">
         <nav class="navbar navbar-expand-lg bg-dark shadow p-0 mb-2 border-bottom border-2 border-dark navbar-light">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,26 +61,32 @@
             <div class="d-flex flex-column justify-content-center">
                 <div class="row">
                     <h2 class="text-green text-center border-bottom border-2 border-success p-4">ارتباط با من</h2>
-                    <div class="d-flex justify-content-between">
-
-                        <p class="text-green text-start">
-                            09157743955
-                            <i class="bi bi-telephone-fill"></i>
-                        </p>
-                        <p class="text-green text-start">
-                            p.pouriaco@gmail.com
-                            <i class="bi bi-envelope-open-fill"></i>
-                        </p>
-                        <p class="text-green text-start">
-                            @p_show8418
-                            <i class="bi bi-telegram"></i>
-                        </p>
-                        <p class="text-green text-start">
-                            @pouriaco
-                            <i class="bi bi-github"></i>
-                        </p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                09157743955
+                                <i class="bi bi-telephone-fill"></i>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                p.pouriaco@gmail.com
+                                <i class="bi bi-envelope-open-fill"></i>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                @p_show8418
+                                <i class="bi bi-telegram"></i>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                @pouriaco
+                                <i class="bi bi-github"></i>
+                            </p>
+                        </div>
                     </div>
-
                 </div>
                 <div class="row">
                     <form class="row g-3 rtl text-green">
@@ -103,9 +109,10 @@
                         </div>
                         <div class="form-floating">
                             <textarea class="form-control bg-dark border border-1 border-success text-success"
-                                placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
+                                placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"
+                                maxlength="200"></textarea>
                             <label for="floatingTextarea2">پیام...</label>
+                            <p id="massage-limit" class="text-muted mt-1">تعداد حرف مجاز باقی مانده (200)</p>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-success">ارسال</button>
@@ -118,7 +125,7 @@
         <!-- </div> -->
     </section>
     <!--English=========>version-->
-    <header class="english-version d-none">
+    <header class="english-version d-none call-me-nav">
         <nav class="navbar navbar-expand-lg bg-dark shadow p-0 mb-2 border-bottom border-2 border-dark navbar-light">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -155,83 +162,88 @@
         </nav>
 
     </header>
-    <section id="callMe-section" class="p-3 english-version d-none" style="height: 75vh;">
-        <div class="row w-100 p-3 bg-dark shadow-green m-auto rounded-3">
-            <div class="col-lg-6 d-flex flex-column justify-content-center ms-auto">
-                <div class="row">
-                    <h2 class="text-green text-center border-bottom border-2 border-success mb-4 p-4">contact with me
-                    </h2>
-                    <p class="text-green text-end">
-                        09157743955
-                        <i class="bi bi-telephone-fill"></i>
-                    </p>
-                    <p class="text-green text-end">
-                        p.pouriaco@gmail.com
-                        <i class="bi bi-envelope-open-fill"></i>
-                    </p>
-                    <p class="text-green text-end">
-                        @p_show8418
-                        <i class="bi bi-telegram"></i>
-                    </p>
-                    <p class="text-green text-end">
-                        @pouriaco
-                        <i class="bi bi-github"></i>
-                    </p>
 
+    <section id="callMe-section"
+        class="p-5 english-version d-flex flex-column align-items-center justify-content-center height-90 d-none">
+        <div class="p-4 bg-dark w-75 shadow-green rounded-3 mx-5">
+            <div class="d-flex flex-column justify-content-center">
+                <div class="row">
+                    <h2 class="text-green text-center border-bottom border-2 border-success p-4">contact with me</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                09157743955
+                                <i class="bi bi-telephone-fill"></i>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                p.pouriaco@gmail.com
+                                <i class="bi bi-envelope-open-fill"></i>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                @p_show8418
+                                <i class="bi bi-telegram"></i>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-green text-start">
+                                @pouriaco
+                                <i class="bi bi-github"></i>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <form class="row g-3 text-green">
+                    <form class="row g-3 rtl text-green">
                         <div class="col-md-6">
-                            <label for="inputname4" class="form-label">Firstname</label>
+                            <label for="inputname4" class="form-label">first name</label>
                             <input type="name" class="form-control bg-dark border border-1 border-success text-success"
                                 id="inputname4">
                         </div>
                         <div class="col-md-6">
-                            <label for="inputlastname4" class="form-label">Lastname</label>
+                            <label for="inputlastname4" class="form-label">last name</label>
                             <input type="lastname"
                                 class="form-control  bg-dark border border-1 border-success text-success"
                                 id="inputlastname4">
                         </div>
                         <div class="col-md-12">
-                            <label for="inputEmail4" class="form-label">Email</label>
+                            <label for="inputEmail4" class="form-label">email</label>
                             <input type="email"
                                 class="form-control  bg-dark border border-1 border-success text-success"
                                 id="inputEmail4">
                         </div>
                         <div class="form-floating">
                             <textarea class="form-control bg-dark border border-1 border-success text-success"
-                                placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Message...</label>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control  bg-dark border border-1 border-success text-success"
-                                id="inputCity">
+                                placeholder="Leave a comment here" id="floatingTextarea4" style="height: 100px"
+                                maxlength="200"></textarea>
+                            <label for="floatingTextarea2">message...</label>
+                            <p id="massage-limit2" class="text-muted mt-1">letters (200)</p>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-success">Send</button>
+                            <button type="submit" class="btn btn-success">ارسال</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-lg-5 p-0 bg-dark shadow-green d-flex justify-content-center me-auto rounded-3">
-                <img src="../asset/Vahedi2.png" class="img-fluid" width="75%" alt="my-picture">
-            </div>
         </div>
-        </div>
+
+        <!-- </div> -->
     </section>
 
     <button class="btn btn-success position-fixed top-90 right-1 fs-4" onclick="languageTranslate()"><i
             class="bi bi-translate"></i></button>
-    <button class="btn btn-success position-absolute py-2 px-3 right-1 question-btn" onclick="modalActive()"><i
+    <button class="btn btn-success position-fixed py-2 px-3 right-1 question-btn" onclick="modalActive()"><i
             class="bi bi-question-lg"></i></button>
-    <button class="btn btn-success position-absolute right-1 fav-btn" onclick="setFavIconInPage()">Fav</button>
+    <button class="btn btn-success position-fixed right-1 fav-btn" onclick="setFavIconInPage()">Fav</button>
     <button class="btn btn-success position-fixed top-90 right-1 fs-4" onclick="languageTranslate()"><i
             class="bi bi-translate"></i></button>
 
     <!--slider-->
-    <div class="slider bg-dark shadow">
+    <!--================Persian=================-->
+    <div class="slider bg-dark shadow persian-version">
         <button class="slider-icon bg-success text-white" onclick="sliderClass()">
             راه های ارتباطی
         </button>
@@ -242,7 +254,18 @@
             <div><i class="bi bi-phone text-green fs-4"></i> &nbsp;&nbsp; 09157743955</div>
         </div>
     </div>
-
+    <!--================English=================-->
+    <div class="slider english-version  bg-dark shadow d-none">
+        <button class="slider-icon bg-success text-white" onclick="sliderClass()">
+            media
+        </button>
+        <div class="slidet-content-ul text-white">
+            <div><i class="bi bi-telegram text-green fs-4"></i> &nbsp;&nbsp; @p_show8418</div>
+            <div><i class="bi bi-github text-green fs-4"></i> &nbsp;&nbsp; @pouriaco</div>
+            <div><i class="bi bi-envelope-open-fill text-green fs-4"></i> &nbsp;&nbsp; p.pouriaco@gmail.com</div>
+            <div><i class="bi bi-phone text-green fs-4"></i> &nbsp;&nbsp; 09157743955</div>
+        </div>
+    </div>
     <!--modal-->
     <div class="back-modal d-flex justify-content-center align-items-baseline d-none">
         <div class="modal-div position-absolute w-25 h-25 bg-dark rounded-3 d-flex flex-column align-items-center">
@@ -260,6 +283,7 @@
         <img src="../asset/loading/Spinner-1.4s-197px (1).gif" alt="gif">
     </div>
 
+    <script src="../js/massageLimit.js"></script>
     <script src="../js/loading.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/favIcon.js"></script>

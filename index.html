@@ -175,14 +175,15 @@
     <!--Profile end-->
 
 
-    <button class="btn btn-success position-absolute py-2 px-3 right-1 question-btn" onclick="modalActive()"><i
+    <button class="btn btn-success position-fixed py-2 px-3 right-1 question-btn" onclick="modalActive()"><i
             class="bi bi-question-lg"></i></button>
-    <button class="btn btn-success position-absolute right-1 fav-btn" onclick="setFavIcon()">Fav</button>
+    <button class="btn btn-success position-fixed right-1 fav-btn" onclick="setFavIcon()">Fav</button>
     <button class="btn btn-success position-fixed top-90 right-1 fs-4" onclick="languageTranslate()"><i
             class="bi bi-translate"></i></button>
 
     <!--slider-->
-    <div class="slider bg-dark shadow">
+    <!--================Persian=================-->
+    <div class="slider bg-dark shadow persian-version">
         <button class="slider-icon bg-success text-white" onclick="sliderClass()">
             راه های ارتباطی
         </button>
@@ -193,10 +194,21 @@
             <div><i class="bi bi-phone text-green fs-4"></i> &nbsp;&nbsp; 09157743955</div>
         </div>
     </div>
-
+    <!--================English=================-->
+    <div class="slider english-version  bg-dark shadow d-none">
+        <button class="slider-icon bg-success text-white" onclick="sliderClass()">
+            media
+        </button>
+        <div class="slidet-content-ul text-white">
+            <div><i class="bi bi-telegram text-green fs-4"></i> &nbsp;&nbsp; @p_show8418</div>
+            <div><i class="bi bi-github text-green fs-4"></i> &nbsp;&nbsp; @pouriaco</div>
+            <div><i class="bi bi-envelope-open-fill text-green fs-4"></i> &nbsp;&nbsp; p.pouriaco@gmail.com</div>
+            <div><i class="bi bi-phone text-green fs-4"></i> &nbsp;&nbsp; 09157743955</div>
+        </div>
+    </div>
     <!--modal-->
     <div class="back-modal d-flex justify-content-center align-items-baseline d-none">
-        <div class="modal-div position-absolute w-25 h-25 bg-dark rounded-3 d-flex flex-column align-items-center">
+        <div class="modal-div position-fixed w-25 h-25 bg-dark rounded-3 d-flex flex-column align-items-center">
             <i class="bi bi-question-diamond-fill text-green fs-1 mt-2"></i>
             <div class="modal-content bg-dark border-0 text-white mt-3 p-4 text-center">
                 هدف از ساخت این پورتفولیو آشنایی بیشتر شما با مهارت های منه تا شاید بعد از این بتونیم باهم همکار های

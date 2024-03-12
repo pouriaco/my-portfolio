@@ -1,5 +1,8 @@
-const mySlider = document.querySelector('.slider');
+const mySlider = document.querySelectorAll('.slider');
 
 function sliderClass() {
-    mySlider.classList.toggle('slider-active');
+    for (let item of mySlider) {
+
+        item.classList.toggle('slider-active');
+    }
 }

@@ -221,8 +221,8 @@
     animation-fill-mode: forwards;
 }
 
-.height-90{
-    height: 90vh;
+.height-90 {
+    height: 80vh;
 }
 
 @keyframes fadeOut {
