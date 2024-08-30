@@ -1,0 +1,46 @@
+.bg-blue-dark{
+    background-color: #141A28;
+}
+.nav-btn{
+    border-radius: 6px;
+    margin: 0 10px;
+    animation-name: border-change-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transition: all 0.8s ;
+}
+.nav-btn:hover{
+    animation: none;
+    background-color: #5ACEE7;
+    box-shadow: 0 0 15px 1px #5ACEE7;
+}
+.nav-btn > a{
+    color: white;
+}
+.nav-btn:hover > a{
+    color: #141A28;
+}
+
+@keyframes border-change-color {
+    0%{
+        border: solid 1px #45B8D1;
+        box-shadow: 0 0 5px .5px #45B8D1;
+    }
+    25%{
+        border: solid 1px #4566d1;
+        box-shadow: 0 0 5px .5px #4566d1;
+    }
+    50%{
+        border: solid 1px #45d1cc96;
+        box-shadow: 0 0 5px .5px #45d1cc96;
+    }
+    75%{
+        border: solid 1px #4566d1;
+        box-shadow: 0 0 5px .5px #4566d1;
+    }
+    100%{
+        border: solid 1px #45B8D1;
+        box-shadow: 0 0 5px .5px #45B8D1;
+    }
+}
